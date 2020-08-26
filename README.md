@@ -7,11 +7,11 @@
 
 后端:fcphp框架
 
-前端:fcup.js
+前端:fcup.js大文件上传插件
 
 演示: https://jinyu.lovefc.cn
 
-[avatar](/jietu.png)
+![avatar](/jietu.png)
 
 ### 安装教程
 
