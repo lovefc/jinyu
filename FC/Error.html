@@ -1,0 +1,162 @@
+<!Doctype html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-CN" />
+	<meta name="Author-Corporation" content="fcphp" />
+	<meta name="keywords" content="fcphp|php|框架" />
+	<meta name="viewport"
+		content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0; user-scalable=no;" />
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height:100%;
+			width:100%;
+		}
+
+		.fcbox .error-body {
+			color: #40485B;
+			font-size: 14px;
+			font-family: -apple-system, "Helvetica Neue", Helvetica, "Nimbus Sans L", "Segoe UI", Arial, "Liberation Sans", "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+			/* background: #f8f8f8;*/
+		}
+
+		.fcbox .pull-right {
+			float: right;
+		}
+
+		.fcbox a {
+			color: #FE7300;
+			text-decoration: underline;
+		}
+
+		.fcbox a:hover {
+			color: #fe9d4c;
+		}
+
+		.fcbox a:active {
+			color: #b15000;
+		}
+
+		.fcbox .logo {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+
+		.fcbox .panel {
+			background: #fff;
+			border: 1px solid #E3E9ED;
+			margin-bottom: 10px;
+		}
+
+		.fcbox .panel-header {
+			font-size: 18px;
+			line-height: 30px;
+			padding: 10px 20px;
+			background: #fcfcfc;
+			border-bottom: 1px solid #E3E9ED;
+		}
+
+		.fcbox .panel-body {
+			padding: 10px;
+		}
+
+		.fcbox .panel-body p {
+			word-break: break-all;
+		}
+
+		.fcbox .container {
+			max-width: 800px;
+			padding: 20px;
+			margin: 0 auto;
+		}
+
+		.fcbox .text-center {
+			text-align: center;
+		}
+
+		.fcbox .thumbnail {
+			padding: 4px;
+			max-width: 100%;
+			border: 1px solid #E3E9ED;
+		}
+
+		.fcbox .btn-primary {
+			color: #fff;
+			font-size: 16px;
+			padding: 8px 14px;
+			line-height: 20px;
+			border-radius: 2px;
+			display: inline-block;
+			background: #FE7300;
+			text-decoration: none;
+		}
+
+		.fcbox .btn-primary:hover,
+		.fcbox .btn-primary:active {
+			color: #fff;
+		}
+
+		.fcbox .footer {
+			color: #9B9B9B;
+			font-size: 12px;
+		}
+
+		.fcbox .footer a {
+			color: #9B9B9B;
+		}
+
+		.fcbox .footer a:hover {
+			color: #fe9d4c;
+		}
+
+		.fcbox .footer a:active {
+			color: #b15000;
+		}
+	</style>
+	<title>系统提醒</title>
+</head>
+
+<body>
+	<div class="fcbox">
+		<div class="error-body">
+			<div class="container">
+				<div class="panel">
+					<div class="panel-header">系统通知</div>
+					<div class="panel-body">
+						<?php if(isset($error['type'])){ ?>
+						<p>
+							<?php echo '错误说明:'.FC\Log::ErrLevelMap($error['type']); ?>
+						</p>
+						<?php } ?>
+						<?php if(isset($error['message'])){ ?>
+						<p>
+							<?php echo '消息提示:'.$error['message']; ?>
+						</p>
+						<?php } ?>
+						<?php if(isset($error['file'])){ ?>
+						<p>
+							<?php echo '错误文件:'.$error['file']; ?>
+						</p>
+						<?php } ?>
+						<?php if(isset($error['line'])){ ?>
+						<p>
+							<?php echo '错误行号:'.$error['line']; ?>
+						</p>
+						<?php } ?>
+						<?php if(isset($error['code'])){ ?>
+						<p>
+							<?php echo '错误代码:'.$error['code']; ?>
+						</p>
+						<?php } ?>
+					</div>
+				</div>
+				<div class="footer" style="text-align:center;">BY FCPHP</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

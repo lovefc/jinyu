@@ -1,0 +1,11 @@
+Uncaught Error: Call to a member function getTimeoutFiles() on bool in D:\phpstudy\WWW\fcup\Main\Api\App\view.php:25
+Stack trace:
+#0 D:\phpstudy\WWW\fcup\Main\Api\App\view.php(14): Main\Api\App\view->batchDelect()
+#1 [internal function]: Main\Api\App\view->index()
+#2 D:\phpstudy\WWW\fcup\FC\Route.php(93): call_user_func_array(Array, Array)
+#3 D:\phpstudy\WWW\fcup\FC\Route.php(446): FC\Route::method(Array)
+#4 D:\phpstudy\WWW\fcup\FC\Route.php(416): FC\Route::funcHandle(Array)
+#5 D:\phpstudy\WWW\fcup\FC\Main.php(21): FC\Route::run()
+#6 D:\phpstudy\WWW\fcup\Main\index.php(14): FC\Main::run()
+#7 {main}
+  thrown
