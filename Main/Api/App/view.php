@@ -28,9 +28,9 @@ class view extends common
         if ($re) {
             $post = array_column($re, 'id');
             foreach ($post as $v) {
-                $res = $this->Model->getOnly(['id' => $v], 'path');
+                $res = $this->files_model->getOnly(['id' => $v], 'path');
                 if ($res) {
-                    $this->Model->checkDel($v);
+                    $this->files_model->checkDel($v);
                     $path = $this->upload_path . $res['path'];
                     if (is_file($path)) {
                         unlink($path);
