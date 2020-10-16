@@ -94,7 +94,7 @@ let up = new fcup({
 
 	checkurl: api.checkUpload, // 检查上传url地址
 
-	type: "", // 限制上传类型，为空不限制
+	type: "jpg,gif,jpeg,png,doc,rar,zip,execl,xls,exe,apk", // 限制上传类型，为空不限制
 
 	shardsize: "1", // 每次分片大小，单位为M，默认1M
 
