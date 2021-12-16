@@ -15,9 +15,11 @@
 
 ### 安装教程
 
-直接下载源码,导入Sql中的sql文件,然后在Main/Config/db.php文件中设置下数据库信息即可(配置mysql那个键名)
+直接下载源码,导入Sql中的sql文件,然后在Main/Config/db/mysql.php文件中设置下数据库信息即可(配置default那个键名)
 
-需要注意的是,要将Main设为主目录.如果存在user.ini文件,最好在里面在加上一行:/www/wwwroot/xxx/FC/ 框架目录的位置,不然会没有权限访问
+在目录执行`composer install`
+
+需要注意的是,要将Main设为主目录.如果存在user.ini文件,最好在里面在加上一行: `/xxx/fcblog/vendor/` 框架目录的位置,不然会没有权限访问
 
 另外需要将以下目录设置成可写
 
