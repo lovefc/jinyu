@@ -24,5 +24,7 @@ return [
    'FC\Glue\Captcha'   => 'captcha.php',
    'FC\Glue\SafeMode'  => 'safemode.php',
    'FC\Glue\Cache'     => 'cache.php',
-   'FC\Glue\Db'        => 'db.php',
+   'FC\Glue\Mysql'     => 'db/mysql.php',
+   'FC\Glue\Sqlite'    => 'db/sqlite.php',   
+   'FC\Glue\Parts'     => 'parts.php',
 ];

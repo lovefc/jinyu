@@ -1,0 +1,7 @@
+Main/Log
+Main/Log/temp.txt
+Main/Runtime
+Main/Cache
+Main/.well-known
+vendor
+composer.lock

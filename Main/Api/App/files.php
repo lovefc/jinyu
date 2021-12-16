@@ -43,7 +43,7 @@ class files extends common
         if (!$md5) {
             $this->error(1, '没有上传文件');
         }
-        $json = ['url' => '', 'file_index' => 1];
+        $json = ['name'=>$name, 'url' => '', 'file_index' => 1];
         // 检查md5是否存在
         if ($res = $this->Model->alreadyExists($md5)) {
             $file_index = $res['file_index'];

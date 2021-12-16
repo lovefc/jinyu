@@ -7,7 +7,7 @@ define('DEBUG', true);
 define('LOG_DIR',__DIR__.'/Log');
 
 // 引入框架
-require dirname(__DIR__) . '/FC/Main.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
 \FC\Main::init();
 
